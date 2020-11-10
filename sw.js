@@ -1,5 +1,5 @@
 // SW Version
-const version = '1.0';
+const version = '1.1';
 
 // Static Cache - App Shell
 const appAssets = [
@@ -60,6 +60,7 @@ const staticCache = ( req, cacheName = `static-${version}` ) => {
 // Network with Cache Fallback
 // Trys the network, if it fails or resolves with a not ok response try the cache instead
 // Should it succeed it would add it to the cache
+
 const fallbackCache = (req) => {
 
     // Try Network
